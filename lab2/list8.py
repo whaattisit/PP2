@@ -6,3 +6,5 @@
 thislist = ["apple", "banana", "cherry"]
 mylist = thislist.copy()
 print(mylist)
+
+# they get your money, and the girls, and the fame

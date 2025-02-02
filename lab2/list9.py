@@ -14,3 +14,5 @@ list2 = [1, 2, 3]
 
 list1.extend(list2)
 print(list1)
+
+# I only do this for the fun, that's my game

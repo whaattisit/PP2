@@ -3,6 +3,7 @@
 #Example 
 print(10 + 5)
 
+  
 # Arithmetic Operations
 #
 # Operator	Name	Example	

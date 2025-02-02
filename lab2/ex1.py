@@ -3,6 +3,9 @@ print(10 > 9)
 print(10 == 9)
 print(10 < 9)
 
+
+# I didn't say f#ck this, I was tired and that's all
+#  
 # Print a message based on whether the condition is True or False:
 a = 200
 b = 33

@@ -6,3 +6,5 @@
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
 thislist.sort()
 print(thislist)
+
+# they get their money grubbing fingers on you

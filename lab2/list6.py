@@ -9,3 +9,5 @@ for x in fruits:
     newlist.append(x)
 
 print(newlist)
+
+# It's funny how it gets started
