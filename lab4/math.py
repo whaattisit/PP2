@@ -26,6 +26,7 @@ print (f"Area of yo regular polygon is: {area}")
 
 # Task 4
 
+print("Task 4: \n")
 from math import *
 l = float(input("Lenght of base: "))
 h = float(input("Height of parallelogram: "))
