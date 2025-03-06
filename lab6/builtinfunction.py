@@ -2,16 +2,14 @@
 
 import math
 
+n = input("Сколько чисел будет в списке? ")
 list1 = []
-n = int(input("Сколько чисел будет в листе? "))
-
 for i in range(n):
     i = int(input("Введите число: "))
     list1.append(i)
 
 result = math.prod(list1)
 print(result)
-
 
 #task 2 
 
@@ -44,9 +42,9 @@ else:
 import time
 import math
 
-n,t = int(input()),int(input())
+n,t = int(input("Sample Input: ")),int(input())
 time.sleep(t/1000)
-print(math.sqrt(n))
+print(f"Sample output: \n{math.sqrt(n)}")
 
 
 
@@ -57,7 +55,7 @@ import random
 def x(num):
     return True if num > 0 else False
 
-n = int(input("Kol-vo elem: "))
+n = int(input("Number of elements: "))
 tuple1 = tuple(x(random.randint(-100,100)) for i in range(n))
 k = all(tuple1)
 
