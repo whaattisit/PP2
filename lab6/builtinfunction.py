@@ -2,10 +2,11 @@
 
 import math
 
-n = input("Сколько чисел будет в списке? ")
+n = int(input("Сколько чисел будет в списке? "))
 list1 = []
+print("Введите ваши числа: ")
 for i in range(n):
-    i = int(input("Введите число: "))
+    i = int(input())
     list1.append(i)
 
 result = math.prod(list1)
