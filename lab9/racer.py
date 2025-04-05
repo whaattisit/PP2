@@ -19,7 +19,7 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GRAY = (128, 128, 128)
 
-# Other Variables for use in the program
+# constants for use in the program
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
 SPEEDENEMY = 5
@@ -27,8 +27,10 @@ SPEEDCOIN = 6
 SPEEDCOIN2 = 5
 SCORE = 0
 NUMBERCOIN = 0
+COINS_TO_SPEED_UP = 5
+ENEMY_SPEED_INCREMENT = 1
 
-# Fonts
+# fonts
 font = pygame.font.Font(r'D:\codes\PP2\lab8\diploma.ttf', 90)
 font_small = pygame.font.SysFont("Verdana", 20)
 game_over = font.render("obidno", True, BLACK)
@@ -60,7 +62,7 @@ class Enemy(pygame.sprite.Sprite):
             self.rect.top = 0
             self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
 
-# Setting Player
+# setting Player
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
@@ -82,7 +84,7 @@ class Player(pygame.sprite.Sprite):
             if pressed_keys[K_RIGHT]:
                 self.rect.move_ip(5, 0)
 
-# Setting Coin
+# setting Coin
 class Coin(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
@@ -149,7 +151,7 @@ while True:
 
     if pygame.sprite.spritecollideany(P1, coins):
         NUMBERCOIN += 1
-        SPEEDENEMY += 1
+        SPEEDENEMY += ENEMY_SPEED_INCREMENT if NUMBERCOIN % COINS_TO_SPEED_UP == 0 else 0
         for entity in coins:
             entity.state = True
 
